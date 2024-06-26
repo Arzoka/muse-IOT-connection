@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 2rem;
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#webp-container {
+	object-fit: contain;
+	max-width: 50%;
+}
+
+label {
+	position: fixed;
+	left: 2rem;
+	top: 2rem;
+}
+
+input {
+	position: fixed;
+	left: 2rem;
+	top: 3.5rem;
+}
+
+#flash-overlay {
+	z-index: 999;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+}
+
+#test-button{
+	z-index: 9999;
+}
