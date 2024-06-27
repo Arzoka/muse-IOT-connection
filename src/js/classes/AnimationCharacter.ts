@@ -77,6 +77,7 @@ export default class AnimationCharacter {
 				setTimeout( () => {
 					this.setState( 4 );
 					setTimeout( () => {
+						this.setEntityNumber( Math.floor( Math.random() * 3 ) + 1 as 1 | 2 | 3);
 						this.setState( 1 );
 					}, 1000 );
 				}, 1000 );

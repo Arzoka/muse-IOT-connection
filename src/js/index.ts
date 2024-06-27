@@ -30,7 +30,7 @@ setInterval( async () => {
 
 		if ( response.ok ) {
 			const data = await response.json();
-			if ( data.message.includes( 'shoot_' ) ) {
+			if ( data.message.includes( 'Shoot_' ) ) {
 				const entityNumber = Number( data.message.split( '_' )[1] );
 				if ( entityNumber >= 1 && entityNumber <= 3 ) {
 					animationcharacter.shoot( entityNumber );
